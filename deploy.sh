@@ -16,7 +16,7 @@ if [ ! -d "/home/ubuntu/demo1/Hassan/" ]; then
 
 else
         cd /home/ubuntu/demo1/Hassan
-        git pull origin main
+        git pull
 fi
   sudo cp * /var/www/html/
   echo "End"
