@@ -9,13 +9,13 @@ else
 fi
 systemctl status nginx --no-pager
 
-if [ ! -d "/home/ubuntu/demo1/Hassan/" ]; then
-        cd /home/ubuntu/demo1/
-        git clone https://github.com/hassanali5512/Hassan.git
-        cd Hassan/
+if [ ! -d "/home/ubuntu/deploy-bash/Bash_Script/" ]; then
+        cd /home/ubuntu/deploy-bash/
+        git clone https://github.com/hassanali5512/Bash_Script.git
+        cd Bash_Script/
 
 else
-        cd /home/ubuntu/demo1/Hassan/
+        cd /home/ubuntu/deploy-bash/Bash_Script/
         git pull origin main
 fi
   sudo cp * /var/www/html/
