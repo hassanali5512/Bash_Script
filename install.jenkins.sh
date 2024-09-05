@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Installation jenkins"
 sudo apt install openjdk-21-jdk
 java --version 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
