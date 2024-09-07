@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 echo "Welcome to my deployment"
 if dpkg -l | grep -qw nginx; then
      echo "Nginx is already installed"
