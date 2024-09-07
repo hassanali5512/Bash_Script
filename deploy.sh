@@ -10,12 +10,12 @@ fi
 systemctl status nginx --no-pager
 
 if [ ! -d "/home/ubuntu/demo1/Hassan/" ]; then
-        cd /home/ubuntu/demo1/
+        sudo cd /home/ubuntu/demo1/
         git clone https://github.com/hassanali5512/Hassan.git
-        cd Hassan/
+        sudo cd Hassan/
 
 else
-        cd /home/ubuntu/demo1/Hassan/
+        sudo cd /home/ubuntu/demo1/Hassan/
         git pull origin main
 fi
   sudo cp * /var/www/html/
