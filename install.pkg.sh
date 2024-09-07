@@ -16,3 +16,4 @@ fi
 # Check the status of pkg-name
 echo "Checking the status of pkg-name..."
 sudo systemctl status pkg-name --no-pager
+echo "Deployment is succesfull"
