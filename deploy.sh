@@ -18,7 +18,7 @@ if [ ! -d "/home/hassan/demo1/hassan/" ]; then
 else
     echo "Repository already cloned. Pulling the latest changes..."
     cd /home/hassan/demo1/hassan/
-    git pull origin master
+    git pull origin main
 fi
 echo "Moving file into default directory..."
 sudo cp * /var/www/html/
