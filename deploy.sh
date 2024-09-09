@@ -10,14 +10,14 @@ else
 fi
 systemctl status nginx --no-pager
 
-if [ ! -d "/home/hassan/demo1/hassan/" ]; then
+if [ ! -d "/home/hassan/demo1/Hassan/" ]; then
     cd /home/hassan/demo1/	
     echo "Cloning the repository..."
-    git clone https://github.com/hassanali5512/hassan.git
-    cd hassan/
+    git clone https://github.com/hassanali5512/Hassan.git
+    cd Hassan/
 else
     echo "Repository already cloned. Pulling the latest changes..."
-    cd /home/hassan/demo1/hassan/
+    cd /home/hassan/demo1/Hassan/
     git pull origin master
 fi
 echo "Moving file into default directory..."
