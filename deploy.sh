@@ -1,22 +1,25 @@
 #!/bin/bash
-echo "Welcome to my deployment"
+
+echo "## Welcome to deployment ##"
 if dpkg -l | grep -qw nginx; then
      echo "Nginx is already installed"
 else
      echo "Nginx is not installed.Installing nginx..."
      sudo apt install nginx -y
-     sudo systemctl start nginx
+     systemctl start nginx
 fi
 systemctl status nginx --no-pager
 
-if [ ! -d "/home/ubuntu/demo1/Hassan/" ]; then
-        sudo cd /home/ubuntu/demo1/
-        git clone https://github.com/hassanali5512/Hassan.git
-        sudo cd Hassan/
-
+if [ ! -d "/home/hassan/demo1/hassan/" ]; then
+    cd /home/maham/iac_web/	
+    echo "Cloning the repository..."
+    git clone https://github.com/maham0612/maham_iac.git
+    cd hassan/
 else
-        sudo cd /home/ubuntu/demo1/Hassan/
-        git pull origin main
+    echo "Repository already cloned. Pulling the latest changes..."
+    cd /home/hassan/demo1/hassan/
+    git pull origin master
 fi
-  sudo cp * /var/www/html/
-  echo "End"
+echo "Moving file into default directory..."
+sudo cp * /var/www/html/
+echo "## End ##"
