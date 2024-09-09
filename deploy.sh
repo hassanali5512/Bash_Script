@@ -12,6 +12,8 @@ systemctl status nginx --no-pager
 
 if [ ! -d "/home/hassan/demo1/" ]; then 
     mkdir /demo1/
+fi
+
  else
  echo "demo1 is already created"
 
