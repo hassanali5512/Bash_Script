@@ -10,6 +10,11 @@ else
 fi
 systemctl status nginx --no-pager
 
+if [ ! -d "/home/hassan/demo1/" ]; then 
+    mkdir /demo1/
+ else
+ echo "demo1 is already created"
+
 if [ ! -d "/home/hassan/demo1/hassan/" ]; then
     cd /home/hassan/demo1/	
     echo "Cloning the repository..."
