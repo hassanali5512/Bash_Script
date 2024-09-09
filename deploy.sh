@@ -11,9 +11,9 @@ fi
 systemctl status nginx --no-pager
 
 if [ ! -d "/home/hassan/demo1/hassan/" ]; then
-    cd /home/maham/iac_web/	
+    cd /home/hassan/demo1/	
     echo "Cloning the repository..."
-    git clone https://github.com/maham0612/maham_iac.git
+    git clone https://github.com/hassanali5512/Hassan.git
     cd hassan/
 else
     echo "Repository already cloned. Pulling the latest changes..."
