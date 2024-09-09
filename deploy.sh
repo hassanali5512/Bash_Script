@@ -11,11 +11,10 @@ fi
 systemctl status nginx --no-pager
 
 if [ ! -d "/home/hassan/demo1/" ]; then 
-    mkdir /demo1/
-fi
-
+    sudo mkdir /demo1/
  else
- echo "demo1 is already created"
+     echo "demo1 is already created"
+fi
 
 if [ ! -d "/home/hassan/demo1/hassan/" ]; then
     cd /home/hassan/demo1/	
